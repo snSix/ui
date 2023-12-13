@@ -1,0 +1,9 @@
+:root {
+}
+
+body {
+  background: var(
+    --Blue,
+    linear-gradient(180deg, #0575e6 0%, #02298a 84.79%, #021b79 100%)
+  );
+}

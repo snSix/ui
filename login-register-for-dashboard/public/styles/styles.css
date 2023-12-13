@@ -1,9 +1,92 @@
 :root {
+  --color-white-100: rgba(255, 255, 255, 1);
+  --color-blue-100: rgba(5, 117, 230, 1);
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main .login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left content */
+.left-content {
+  height: 100%;
+  width: 870px;
   background: var(
     --Blue,
     linear-gradient(180deg, #0575e6 0%, #02298a 84.79%, #021b79 100%)
   );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-content .content {
+  color: var(--color-white-100);
+}
+
+.left-content .content h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.left-content .content p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.left-content .content .learn-more-btn {
+  display: flex;
+  padding: 8px 30px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 30px;
+  background: var(--color-blue-100);
+  color: var(--color-white-100);
+  margin-top: 23px;
+}
+
+.left-content .content .learn-more-btn:hover {
+  cursor: pointer;
+  background: rgba(5, 117, 230, 0.8);
+}
+
+.left-content .ellipses .ellipse-1 {
+  position: absolute;
+  left: -90px;
+  bottom: -16px;
+}
+
+.left-content .ellipses .ellipse-2 {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+}
+
+/* Right content */
+.right-content {
+  height: 100%;
+  width: 308px;
+  background: var(--White);
 }

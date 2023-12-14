@@ -1,6 +1,8 @@
 :root {
   --color-white-100: rgba(255, 255, 255, 1);
   --color-blue-100: rgba(5, 117, 230, 1);
+  --color-blue-200: rgba(5, 117, 230, 0.8);
+  --color-dark-100: #333;
 }
 
 body {
@@ -13,7 +15,7 @@ body {
 main .login-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 116px;
   align-items: center;
   height: 100vh;
   position: relative;
@@ -69,7 +71,7 @@ main .login-container {
 
 .left-content .content .learn-more-btn:hover {
   cursor: pointer;
-  background: rgba(5, 117, 230, 0.8);
+  background: var(--color-blue-200);
 }
 
 .left-content .ellipses .ellipse-1 {
@@ -89,4 +91,86 @@ main .login-container {
   height: 100%;
   width: 308px;
   background: var(--White);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-content .content {
+  margin-bottom: 40px;
+}
+
+.right-content .content h2 {
+  color: var(--color-dark-100);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.right-content .content p {
+  color: var(--color-dark-100);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  margin-top: 3px;
+  text-align: left;
+}
+
+.right-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.right-content form .input-container input {
+  border-radius: 30px;
+  border: 1px solid #eee;
+  background: #fff;
+  width: 191px;
+  padding: 18px 58px;
+}
+
+.right-content form .input-container input::placeholder {
+  color: #333;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.3;
+  text-transform: capitalize;
+}
+
+.right-content form .input-container .input-with-icon {
+  position: relative;
+}
+
+.right-content form .input-container .input-with-icon img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 26px;
+}
+
+.right-content form .register-btn {
+  display: flex;
+  width: 307px;
+  padding: 18px 26px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--color-blue-100);
+  border: 0;
+  color: var(--color-white-100);
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
